@@ -7,6 +7,10 @@ ol, ul {
   padding-left: 30px;
 }
 
+li.selected {
+  color:red;
+  font-weight: bold;
+}
 .board-row:after {
   clear: both;
   content: "";
@@ -17,6 +21,16 @@ ol, ul {
   margin-bottom: 10px;
 }
 
+/*
+  winnerSquare class CSS is defined directly on the square class (.square.winnerSquare)
+  we didn't have to: so long as .winnerSquare is listed after .square in this file so that 
+  .square takes precedence.
+*/
+.square.winnerSquare {
+  color: crimson;
+  /* font-size: 30px; */
+}
+  
 .square {
   background: #fff;
   border: 1px solid #999;
